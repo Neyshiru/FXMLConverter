@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fxmlconverter.controller.MainController">
+   <children>
+      <VBox prefHeight="675.0" prefWidth="480.0" HBox.hgrow="SOMETIMES">
+         <children>
+            <ScrollPane VBox.vgrow="SOMETIMES">
+               <content>
+                  <TextArea fx:id="txtImport" onDragDropped="#handleDragDrop" onDragOver="#handleDragOver" prefHeight="${txtImport.parent.height}" prefWidth="${txtImport.parent.width}" />
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button fx:id="btnImport" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#importFile" prefHeight="32.0" styleClass="btn-blue" text="%btn.import" HBox.hgrow="SOMETIMES" />
+                  <Button fx:id="btnConvert" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#convert" prefHeight="32.0" styleClass="btn-green" text="%btn.convert" HBox.hgrow="SOMETIMES" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefWidth="480.0" HBox.hgrow="SOMETIMES">
+         <children>
+            <ScrollPane VBox.vgrow="SOMETIMES">
+               <content>
+                  <TextArea fx:id="txtDeclaration" prefHeight="${txtDeclaration.parent.height}" prefWidth="${txtDeclaration.parent.width}" />
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button fx:id="btnCopyDeclaration" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#copyDeclaration" prefHeight="32.0" styleClass="btn-blue" text="%btn.copyDeclaration" HBox.hgrow="SOMETIMES" />
+               </children>
+            </HBox>
+            <ScrollPane VBox.vgrow="SOMETIMES">
+               <content>
+                  <TextArea fx:id="txtFunction" prefHeight="${txtFunction.parent.height}" prefWidth="${txtFunction.parent.width}" />
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button fx:id="btnCopyFunction" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#copyFunction" prefHeight="32.0" styleClass="btn-blue" text="%btn.copyFunction" HBox.hgrow="SOMETIMES" />
+               </children>
+            </HBox>
+            <ScrollPane VBox.vgrow="SOMETIMES">
+               <content>
+                  <TextArea fx:id="txtAction" prefHeight="${txtAction.parent.height}" prefWidth="${txtAction.parent.width}" />
+               </content>
+            </ScrollPane>
+            <HBox alignment="CENTER">
+               <children>
+                  <Button fx:id="btnCopyAction" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#copyAction" prefHeight="32.0" styleClass="btn-blue" text="%btn.copyAction" HBox.hgrow="SOMETIMES" />
+               </children>
+            </HBox>
+            <HBox>
+               <children>
+                  <Button fx:id="btnCopyAll" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#copyAll" prefHeight="32.0" styleClass="btn-green" text="%btn.copyAll" HBox.hgrow="SOMETIMES" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

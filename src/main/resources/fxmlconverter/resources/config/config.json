@@ -1,0 +1,15 @@
+{
+    "mods": [
+        {
+            "id": "NEU"
+        },
+        {
+            "id": "Patcher",
+            "requiredMods": []
+        },
+        {
+            "id": "SkyHanni",
+            "requiredMods": [{"id": "NEU"}]
+        }
+    ]
+}

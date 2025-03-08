@@ -1,0 +1,64 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+.lbl-red {
+    -fx-text-fill: #dc3545;
+}
+.lbl-blue {
+    -fx-text-fill: #007cff;
+}
+.button {
+    -fx-font-size: 12px;
+    -fx-font-weight: bolder;
+    -fx-text-fill: #fff;
+    -fx-border-width: 2;
+}
+.btn-green {
+    -fx-background-color: #28a745;
+    -fx-border-color: #269840;
+}
+.btn-green:hover {
+    -fx-background-color: #269840;
+}
+.btn-green:pressed {
+    -fx-text-fill: #28a745;
+    -fx-border-color: #28a745;
+    -fx-background-color: #fff;
+    /*-fx-background-color: #248935;*/
+}
+.btn-blue {
+    -fx-background-color: #007cfe;
+    -fx-border-color: #0070f2;
+}
+.btn-blue:hover {
+    -fx-background-color: #0070f2;
+}
+.btn-blue:pressed {
+    -fx-text-fill: #007cfe;
+    -fx-border-color: #007cfe;
+    -fx-background-color: #fff;
+    /*--fx-background-color: #008cff;*/
+}
+.btn-red {
+    -fx-background-color: #dc3545;
+}
+.btn-red:hover {
+    -fx-background-color: #ca2938;
+}
+.btn-red:pressed {
+    -fx-text-fill: #dc3545;
+    -fx-border-color: #dc3545;
+    -fx-background-color: #fff;
+    /*-fx-background-color: #b82032;*/
+}
+.roundButton {
+    -fx-background-radius: 5em;
+    -fx-min-width: 16px;
+    -fx-min-height: 16px;
+    -fx-max-width: 16px;
+    -fx-max-height: 16px;
+}
+.textFieldError {
+    -fx-border-color: RED;
+    -fx-border-width: 2;
+    -fx-border-radius: 2;
+}
